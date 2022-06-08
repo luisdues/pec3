@@ -1,0 +1,588 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+img {
+  max-width: 100%
+}
+body {
+  color: #2A2A2A;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #FFF7E8;
+}
+h1 {
+  margin-top: 80px;
+}
+h1, h2 {
+  color: #2A2A2A;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.footer {
+  color: #FFFFFF;
+}
+
+ .footer .footer2 a:hover, .header nav a:hover  {
+  color: #79BAAB;
+}
+.footer img:hover {
+  opacity: 0.7;
+}
+/****************************
+Header
+*****************************/
+.header {
+  background: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  position: fixed;
+}
+header nav ul li .active {
+  font-weight: bold;
+  border-bottom: thin dashed;
+}
+.header a {
+  grid-column: 2/3;
+}
+.header nav {
+  grid-column: 5/6;
+  color: #2A2A2A;
+}
+.header nav a:hover {
+  color:#79BAAB;
+}
+
+/****************************
+footer
+*****************************/
+footer {
+  background-color: #2A2A2A;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.text {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  grid-column: 2/6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.text p:first-child {
+  font-weight: bold;
+}
+.text {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+.redes{
+  display: flex;
+  flex-direction: row;
+}
+.text ul li {
+  display: inline;
+}
+footer hr {
+  grid-column: 2/6;
+}
+.footer2 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  grid-column: 2/6;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.footer2 ul li {
+  display: inline;
+  padding-left: 5px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+/****************************
+Navbar menu
+*****************************/
+nav {
+  text-align: center;
+}
+nav ul li {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 400;
+    padding-left: 10px;
+    text-align: center;
+    color:black;
+}
+
+nav ul li a {
+  vertical-align: middle;
+    color: inherit;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+nav ul li a:hover {
+    border: none;
+}
+
+
+/****************************
+HOME
+*****************************/
+.lineas-titulo {
+  display: inline-block;
+}
+.lineas-titulo::after,.lineas-titulo::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 3px;
+  background-color: black;
+  top: 8.9em;
+}
+.lineas-titulo::after {
+right: 260px;
+}
+.lineas-titulo::before {
+  left: 260px;
+}
+/*NO SE HACERLO RESPONSIVE DEJO A MEDIAS LAS LINEAS*/
+.modulo1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/knife-bg.jpg);
+  background-size: cover;
+  height: 400px;
+}
+.modulo1 .textos {
+  min-width: 250px;
+  max-width: 500px;
+}
+.modulo1 input {
+  max-width: 400px;
+  min-width: 250px;
+  margin-top: 30px;
+}
+.modulo2 .texto_modulo2 a {
+  text-decoration: none;
+  color: #DC4A23;
+  margin-bottom: 30px;
+}
+.texto_modulo2 a:hover {
+  color: #EB9781;
+}
+.titulorecetas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-gap: 20px;
+grid-template-rows: auto;
+}
+.receta1 {
+  grid-column: 2/3;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.receta2{
+  grid-column: 3/4;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.receta3 {
+  grid-column: 4/5;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.receta4 {
+  grid-column: 5/6;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.contenedor a:hover {
+  color: #79BAAB;
+}
+.contenedor a {
+  color: #2A2A2A;
+  text-decoration: none;
+}
+.modulo2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/shop-bg.jpg);
+  background-size: cover;
+  height: 450px;
+  grid-column: 2/6;
+}
+.shop {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  max-width: 780px;
+  min-width: 250px;
+  min-height: 250px;
+}
+.texto_modulo2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+  margin: 0px 40px;
+
+}
+
+.texto_modulo2 p {
+  margin: 10px 20px;
+}
+.modulo3 {
+  grid-column: 2/4;
+  min-height: 300px;
+}
+.modulo3 .button {
+  border: solid 1px #79BAAB;
+  border-radius: 2px;
+  background-color: white;
+  color: #79BAAB;
+  padding: 10px;
+  position: relative;
+  top: 40px;
+}
+.modulo3 .button:hover {
+background-color:#79BAAB;
+color:white;
+}
+.fotomodulo3 {
+  grid-column: 4/6;
+}
+.newsletter {
+  margin-top: 20px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image:url(../img/doodle.png);
+  background-color: #79BAAB;
+}
+.newsletter input {
+  height: 40px;
+  border: none;
+}
+.newsletter button {
+  background-color: #DC4A23;
+  height: 40px;
+  width: 80px;
+  border: none;
+  border-radius: 3px;
+  color: white;
+}
+.newsletter button:hover {
+  background-color: #EB9781;
+}
+/****************************
+recipes
+*****************************/
+.titulo {
+  grid-column: 2/6;
+}
+.aside {
+  grid-column: 2/3;
+  grid-row:2/7;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.aside fieldset {
+  display: flex;
+  flex-direction: column;
+}
+.uno {
+  grid-column: 3/4;
+}
+.dos {
+  grid-column: 4/5;
+}
+.tres {
+  grid-column: 5/6;
+}
+.cuatro {
+  grid-column: 3/4;
+}
+.cinco {
+  grid-column: 4/5;
+}
+.seis {
+  grid-column: 5/6;
+}
+.siete {
+  grid-column: 3/4;
+}
+.ocho {
+  grid-column: 4/5;
+}
+.nueve {
+  grid-column: 5/6;
+}
+.diez {
+  grid-column: 3/4;
+}
+.once {
+  grid-column: 4/5;
+}
+.doce {
+  grid-column: 5/6;
+}
+.uno p {
+  font-weight: bold;
+}
+.dos p {
+  font-weight: bold;
+}
+.tres p {
+  font-weight: bold;
+}
+.cuatro p {
+  font-weight: bold;
+}
+.cinco p {
+  font-weight: bold;
+}
+.seis p {
+  font-weight: bold;
+}
+.siete p {
+  font-weight: bold;
+}
+.ocho p {
+  font-weight: bold;
+}
+.nueve p {
+  font-weight: bold;
+}
+.diez {
+  font-weight: bold;
+}
+.once {
+  font-weight: bold;
+}
+.doce {
+  font-weight: bold;
+}
+/****************************
+videos
+*****************************/
+.videos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows:auto;
+  grid-gap: 20px;
+}
+.video1 {
+  grid-column: 2/3;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.video2 {
+  grid-column: 3/4;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.video3 {
+  grid-column: 2/3;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.video4 {
+  grid-column: 3/4;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.video5 {
+  grid-column: 2/3;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.video6 {
+  grid-column: 3/4;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+/****************************
+media querys
+*****************************/
+
+@media screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .header img {
+    max-width: 50%;
+  }
+  .titulo {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin:0px 10px;
+  }
+  .receta1 {
+    grid-column: 1/2;
+  }
+  .receta2{
+    grid-column: 2/3;
+  }
+  .receta3 {
+    grid-column: 1/2;
+  }
+  .receta4 {
+    grid-column: 2/3;
+  }
+  .modulo2 {
+    grid-column: 1/3;
+  }
+  .modulo3 {
+    grid-column: 1/3;
+    min-height: 450px;
+  }
+  .fotomodulo3 {
+    grid-column: 1/3;
+  }
+  .titulo {
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .aside {
+    display: none;
+  }
+  .uno {
+    grid-column: 1/2;
+  }
+  .dos {
+    grid-column: 2/3;
+  }
+  .tres {
+    grid-column: 1/2;
+  }
+  .cuatro {
+    grid-column: 2/3;
+  }
+  .cinco {
+    grid-column: 1/2;
+  }
+  .seis {
+    grid-column: 2/3;
+  }
+  .siete {
+    grid-column: 1/2;
+  }
+  .ocho {
+    grid-column: 2/3;
+  }
+  .nueve {
+    grid-column: 1/2;
+  }
+  .diez {
+    grid-column: 2/3;
+  }
+  .once {
+    grid-column: 1/2;
+  }
+  .doce {
+    grid-column: 2/3;
+  }
+  .videos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .footer .text, .footer .redes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .footer .footer2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .videos {
+    margin: 0px 10px;
+  }
+}
+/**********************************
+Formularios
+**********************************/
+fieldset {
+  border: none;
+  margin: 20px;
+}
+legend {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+label {
+  margin-top: 5px;
+}
+.busqueda {
+  border-color: #C5E1DB;
+  border-radius: 5px;
+  height: 40px;
+}
+/**********************************
+hover recetas
+**********************************/
+.uno:hover,.dos:hover, .tres:hover, .cuatro:hover, .cinco:hover, .seis:hover, .siete:hover, .ocho:hover, .nueve:hover, .diez:hover, .once:hover, .doce.hover {
+  border: solid 1px #79BAAB;
+}
